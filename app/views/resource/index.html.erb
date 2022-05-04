@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DIY Abortion Resources</title>
+  </head>
+  <body>
+    <h1>DIY Abortion Resources</h1>
+
+    <div>
+      <table>
+        <% @resources.each do |r| %>
+          <tr>
+            <td><a href="<%= r.link %>"><%= r.name %></a></td>
+            <td><%= r.description %></td>
+          </tr>
+        <% end %>
+      </table>
+    </div>
+  </body>
+</html>
